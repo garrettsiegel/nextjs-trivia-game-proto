@@ -5,9 +5,15 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: true,
     domains: ['res.cloudinary.com'],
   },
-  assetPrefix: isProd ? 'https://a1.espncdn.com/prod/' : undefined,
+  assetPrefix: isProd ? 'https://a.espncdn.com/prod/scripts/pagetype/otl/2023/231218_multi_2023-year-in-review/' : undefined,
+  webpack: {
+    output: {
+      filename: '[name].[ext]',
+    }
+  }
 }
 
 module.exports = nextConfig;
