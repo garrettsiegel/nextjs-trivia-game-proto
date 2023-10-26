@@ -1,0 +1,1 @@
+# nextjs-trivia-game-proto
